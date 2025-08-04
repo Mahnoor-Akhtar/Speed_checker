@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedChecker - Typing Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Speed<span>Checker</span></h1>
+            <div class="timer" id="timer">30s</div>
+        </header>
+
+        <main>
+            <div class="test-container">
+                <div class="text-display" id="textDisplay">
+                    Click 'Start Test' to begin. You'll have 30 seconds to type the text that appears here.
+                </div>
+                
+                <textarea class="text-input" id="textInput" placeholder="The text will appear here when you start..."></textarea>
+                
+                <div class="controls">
+                    <button class="btn" id="startTest">Start Test</button>
+                    <button class="btn" id="resetTest" disabled>Reset</button>
+                </div>
+            </div>
+
+            <div class="results" id="results">
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-value" id="wpm">0</div>
+                        <div class="stat-label">wpm</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="accuracy">0%</div>
+                        <div class="stat-label">acc</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="raw">0</div>
+                        <div class="stat-label">raw</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="chars">0/0/0</div>
+                        <div class="stat-label">characters</div>
+                    </div>
+                </div>
+
+                <div class="additional-stats">
+                    <div class="stat-row">
+                        <span>test type</span>
+                        <span>time 30 english</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>errors</span>
+                        <span id="errors">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>time</span>
+                        <span>30s</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Developed by Mahnoor and Haris</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
